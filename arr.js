@@ -7,34 +7,35 @@ const name = readlineSync.question('Как твое имя? ');
 console.log(`Привет, ${name} !`);
 console.log('Какое пропущеное число?');
 
+
+const progress = (first, metr, step) => {
+    let arr = [];
+    for (let i = 1; i < metr; i++) {
+        arr.push(first + step * i);
+    }
+    return arr;
+}
 function func() {
     for (let i = 0; i < 3; i++) {
 
-        let m = Math.floor(Math.random() * (20 - 10) + 10);
+        let metr = Math.floor(Math.random() * (20 - 10) + 10);
         let step = Math.floor(Math.random() * (5 - 1) + 1);
         let first = Math.floor(Math.random() * 50);
-        let s = Math.floor(Math.random() * (5 - 1) + 1);
+        let res = Math.floor(Math.random() * (5 - 1) + 1);
+
+        let result = progress(first, metr, step);
+        let data = String(result[res])
+        result[res] = '..';
 
 
-        let arr = [];
-        for (let i = 1; i < m; i++) {
-            arr.push(first + step * i);
-        }
+        console.log('Вопрос :', result.toString());
 
-        let data = arr.toString()
-
-        let res = (first + step * i)
-
-
-        console.log('Вопрос :', data, res);
         const answer = readlineSync.question('Ответ: ');
 
-
-
-        if (res == answer) {
-            console.log(`Првильно: ${res}`);
+        if (data == answer) {
+            console.log(`Првильно: ${data}`);
         } else {
-            console.log(`'${answer}' это не правильный ответ ;(.Bерный ответ '${res}'.\nДавай попробуй снова, ${name}!`)
+            console.log(`'${answer}' это не правильный ответ ;(.Bерный ответ '${data}'.\nДавай попробуй снова, ${name}!`)
         }
     }
     console.log(`Молодец, ${name}!`);
