@@ -12,8 +12,8 @@ function func() {
 
         const num1 = Math.floor(Math.random() * 10);
         const num2 = Math.floor(Math.random() * 10);
-        const num3 = ['-', '+', '*'];
-        let n = num3[Math.floor(Math.random() * 3)];
+        const num3 = ['-', '+', '*', '/'];
+        let n = num3[Math.floor(Math.random() * 4)];
 
 
         console.log(`Вопрос : ${num1} ${n} ${num2}`);
@@ -29,6 +29,9 @@ function func() {
         }
         if (n == '*') {
             sum = num1 * num2;
+        }
+        if (n == '/') {
+            sum = num1 / num2;
         }
 
 
