@@ -6,3 +6,4 @@ prost.js: простое число или нет
 del.js: наибольший делитель
 
 [![asciicast](https://asciinema.org/a/452560.svg)](https://asciinema.org/a/452560)
+[![asciicast](https://asciinema.org/a/452562.svg)](https://asciinema.org/a/452562)
