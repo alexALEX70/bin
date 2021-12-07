@@ -7,7 +7,7 @@ const name = readlineSync.question('Сначала назови свое имя?
 console.log(`Привет, ${name} !`);
 console.log('Ответ "yes" если число простое, если все остальные то ответ "no"');
 
-function func() {
+function func4() {
     for (let i = 0; i < 3; i++) {
         const question = Math.floor(Math.random() * 100);
         console.log(`Вопрос : ${question}`);
@@ -33,4 +33,4 @@ function func() {
     console.log(`Молодец, ${name}!`);
 }
 
-func();
+export default func4();

@@ -7,7 +7,7 @@ import readlineSync from 'readline-sync';
 console.log('Добро пожаловать в занимательную игру!');
 const name = readlineSync.question('Сначала назови свое имя? ');
 console.log(`Привет, ${name} !`);
-console.log('Ответ "yes" если число четное, усли не четное то ответ "no"');
+console.log('Ответ "yes" если число четное, если не четное то ответ "no"');
 
 function func() {
     for (let i = 0; i < 3; i++) {
@@ -24,7 +24,7 @@ function func() {
     }
     console.log(`Правильно, ${name}!`);
 }
-func();
+export default func();
 
 // const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 

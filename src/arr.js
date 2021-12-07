@@ -15,7 +15,7 @@ const progress = (first, metr, step) => {
     }
     return arr;
 }
-function func() {
+function func1() {
     for (let i = 0; i < 3; i++) {
 
         let metr = Math.floor(Math.random() * (20 - 10) + 10);
@@ -41,6 +41,6 @@ function func() {
     console.log(`Молодец, ${name}!`);
 
 }
-func()
+export default func1();
 
 

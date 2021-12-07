@@ -7,7 +7,7 @@ const name = readlineSync.question('Как твое имя? ');
 console.log(`Привет, ${name} !`);
 console.log('Найди наиболший общий делитель двух чисел');
 
-function func() {
+function func3() {
     for (let i = 0; i < 3; i++) {
 
 
@@ -24,12 +24,12 @@ function func() {
             return del(num2, num1 % num2)
         }
         if (del(num1, num2) == answer) {
-            console.log('Првильно')
+            console.log('Правильно')
         } else {
             console.log(`'${answer}' это не правильный ответ ;(.Bерный ответ '${del(num1, num2)}'.\nДавай попробуй снова, ${name}!`)
         }
     }
 }
-func();
+export default func3();
 console.log(`Молодец, ${name}!`);
 

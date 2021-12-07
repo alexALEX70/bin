@@ -7,7 +7,7 @@ console.log('Добро пожаловать на увлекательную и�
 const name = readlineSync.question('Как тебя зовут? ');
 console.log(`Привет, ${name} !`);
 console.log('Угадай какой будет результат?')
-function func() {
+function func2() {
     for (let i = 0; i < 3; i++) {
 
         const num1 = Math.floor(Math.random() * 10);
@@ -42,7 +42,7 @@ function func() {
         }
     }
 }
-func();
+export default func2();
 console.log(`Молодец, ${name}!`);
 
 
